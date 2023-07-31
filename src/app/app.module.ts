@@ -7,9 +7,11 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { ErrorComponent } from './error/error.component';
+import { ListtodosComponent } from './listtodos/listtodos.component';
+import { ListTodosComponent } from './list-todos/list-todos.component';
 
 @NgModule({
-  declarations: [AppComponent, WelcomeComponent, LoginComponent, ErrorComponent],
+  declarations: [AppComponent, WelcomeComponent, LoginComponent, ErrorComponent, ListtodosComponent, ListTodosComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
