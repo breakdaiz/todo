@@ -15,17 +15,22 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" routerLink="/welcome/in28minutes"
+          <a
+            *ngIf="isUserLoggedIn"
+            class="nav-link"
+            routerLink="/welcome/in28minutes"
             >Home <span class="sr-only"></span
           ></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/todos">Todos</a>
+          <a *ngIf="isUserLoggedIn" class="nav-link" routerLink="/todos"
+            >Todos</a
+          >
         </li>
       </ul>
       <ul class="navbar-nav justify-content-end">
-        <a class="nav-link" href="/login">Login </a>
-        <a class="nav-link" href="/logout">Logout </a>
+        <a *ngIf="!isUserLoggedIn" class="nav-link" href="/login">Login </a>
+        <a *ngIf="isUserLoggedIn" class="nav-link" href="/logout">Logout </a>
       </ul>
     </div>
   </nav>
