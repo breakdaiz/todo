@@ -1,6 +1,8 @@
 .login__container {
   display: flex;
+  width: 25rem;
   flex-direction: column;
-  max-width: 10%;
-  margin: 1rem;
+  margin: auto;
+  align-content: center;
+  justify-content: center;
 }
